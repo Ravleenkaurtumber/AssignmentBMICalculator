@@ -24,12 +24,57 @@ namespace AssignmentBMICalculator
 
         private void CalculateButton_Click(object sender, EventArgs e)
         {
+            double weight = Convert.ToDouble(EnterWeighttextbox.Text);
+            double height = Convert.ToDouble(Enterheighttextbox.Text);
+            double result = 0.0;
+            if (ImperialRadioButton.Checked)
+            {
+                result = (weight * 703) / (height * height);
+
+            }
+            else if (MetricradioButton.Checked)
+            {
+                result = weight / (height * height);
+            }
+
+            ResulttextBox.Text = "BMI:" + result.ToString("#.#");
 
         }
 
-        private void KgradioButton_CheckedChanged(object sender, EventArgs e)
+        
+
+        
+        private void Resetbutton_Click(object sender, EventArgs e)
+        {
+            EnterWeighttextbox.Text = "";
+            Enterheighttextbox.Text = "";
+            ResulttextBox.Text = "";
+
+            ImperialRadioButton.Checked = false;
+            MetricradioButton.Checked = false;
+
+
+        }
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
+
+        private void EnterWeighttextbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BMIResulttextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+       
     }
 }

@@ -35,19 +35,19 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.Headinglabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.MYweightlabel = new System.Windows.Forms.Label();
+            this.MYheightlabel = new System.Windows.Forms.Label();
+            this.EnterWeighttextbox = new System.Windows.Forms.TextBox();
+            this.Enterheighttextbox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.ResultLabel = new System.Windows.Forms.Label();
+            this.BMIResultLabel = new System.Windows.Forms.Label();
+            this.MetricradioButton = new System.Windows.Forms.RadioButton();
+            this.ImperialRadioButton = new System.Windows.Forms.RadioButton();
             this.ResulttextBox = new System.Windows.Forms.TextBox();
-            this.CalculateButton = new System.Windows.Forms.Button();
+            this.BMIcalCalculateButton = new System.Windows.Forms.Button();
             this.Resetbutton = new System.Windows.Forms.Button();
-            this.Exitbutton = new System.Windows.Forms.Button();
             this.BMIResulttextBox = new System.Windows.Forms.TextBox();
-            this.KgradioButton = new System.Windows.Forms.RadioButton();
-            this.PoundradioButton = new System.Windows.Forms.RadioButton();
+            this.ExitButton = new System.Windows.Forms.Button();
             this.BMItableLayoutPanel.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -126,20 +126,20 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.56458F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.43542F));
-            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.textBox2, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.textBox3, 1, 2);
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 54.82759F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45.17241F));
+            this.tableLayoutPanel1.Controls.Add(this.MYweightlabel, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.MYheightlabel, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.EnterWeighttextbox, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.Enterheighttextbox, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.ResultLabel, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.BMIResultLabel, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.MetricradioButton, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.ImperialRadioButton, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.ResulttextBox, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.CalculateButton, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.BMIcalCalculateButton, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.Resetbutton, 0, 6);
-            this.tableLayoutPanel1.Controls.Add(this.Exitbutton, 1, 6);
-            this.tableLayoutPanel1.Controls.Add(this.KgradioButton, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.PoundradioButton, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.ExitButton, 1, 6);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(2, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 7;
@@ -147,49 +147,52 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.65891F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.49042F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.73802F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.46006F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.75563F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.377F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.73802F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.45083F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(290, 313);
             this.tableLayoutPanel1.TabIndex = 0;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.BMItableLayoutPanel_Paint);
             // 
-            // label1
+            // MYweightlabel
             // 
-            this.label1.BackColor = System.Drawing.Color.SeaGreen;
-            this.label1.Location = new System.Drawing.Point(3, 40);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(149, 41);
-            this.label1.TabIndex = 0;
-            this.label1.Text = " My Weight";
+            this.MYweightlabel.BackColor = System.Drawing.Color.SeaGreen;
+            this.MYweightlabel.Location = new System.Drawing.Point(3, 40);
+            this.MYweightlabel.Name = "MYweightlabel";
+            this.MYweightlabel.Size = new System.Drawing.Size(149, 41);
+            this.MYweightlabel.TabIndex = 0;
+            this.MYweightlabel.Text = " My Weight";
             // 
-            // label2
+            // MYheightlabel
             // 
-            this.label2.AutoEllipsis = true;
-            this.label2.BackColor = System.Drawing.Color.SeaGreen;
-            this.label2.Location = new System.Drawing.Point(3, 86);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(149, 41);
-            this.label2.TabIndex = 0;
-            this.label2.Text = " My Height";
+            this.MYheightlabel.AutoEllipsis = true;
+            this.MYheightlabel.BackColor = System.Drawing.Color.SeaGreen;
+            this.MYheightlabel.Location = new System.Drawing.Point(3, 86);
+            this.MYheightlabel.Name = "MYheightlabel";
+            this.MYheightlabel.Size = new System.Drawing.Size(149, 41);
+            this.MYheightlabel.TabIndex = 0;
+            this.MYheightlabel.Text = " My Height";
+            this.MYheightlabel.Click += new System.EventHandler(this.label2_Click);
             // 
-            // textBox2
+            // EnterWeighttextbox
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Location = new System.Drawing.Point(169, 43);
-            this.textBox2.MaxLength = 3;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(110, 38);
-            this.textBox2.TabIndex = 1;
+            this.EnterWeighttextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.EnterWeighttextbox.Location = new System.Drawing.Point(162, 43);
+            this.EnterWeighttextbox.MaxLength = 3;
+            this.EnterWeighttextbox.Name = "EnterWeighttextbox";
+            this.EnterWeighttextbox.Size = new System.Drawing.Size(125, 38);
+            this.EnterWeighttextbox.TabIndex = 1;
+            this.EnterWeighttextbox.TextChanged += new System.EventHandler(this.EnterWeighttextbox_TextChanged);
             // 
-            // textBox3
+            // Enterheighttextbox
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Location = new System.Drawing.Point(169, 89);
-            this.textBox3.MaxLength = 3;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(110, 38);
-            this.textBox3.TabIndex = 1;
+            this.Enterheighttextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Enterheighttextbox.Location = new System.Drawing.Point(162, 89);
+            this.Enterheighttextbox.MaxLength = 3;
+            this.Enterheighttextbox.Name = "Enterheighttextbox";
+            this.Enterheighttextbox.Size = new System.Drawing.Size(125, 38);
+            this.Enterheighttextbox.TabIndex = 1;
             // 
             // label3
             // 
@@ -202,58 +205,70 @@
             this.label3.Text = "BMI Calculator";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // ResultLabel
+            // BMIResultLabel
             // 
-            this.ResultLabel.AutoEllipsis = true;
-            this.ResultLabel.BackColor = System.Drawing.Color.SeaGreen;
-            this.ResultLabel.Location = new System.Drawing.Point(3, 174);
-            this.ResultLabel.Name = "ResultLabel";
-            this.ResultLabel.Size = new System.Drawing.Size(149, 39);
-            this.ResultLabel.TabIndex = 0;
-            this.ResultLabel.Text = " My BMI";
+            this.BMIResultLabel.AutoEllipsis = true;
+            this.BMIResultLabel.BackColor = System.Drawing.Color.SeaGreen;
+            this.BMIResultLabel.Location = new System.Drawing.Point(3, 174);
+            this.BMIResultLabel.Name = "BMIResultLabel";
+            this.BMIResultLabel.Size = new System.Drawing.Size(149, 39);
+            this.BMIResultLabel.TabIndex = 0;
+            this.BMIResultLabel.Text = " My BMI";
+            // 
+            // MetricradioButton
+            // 
+            this.MetricradioButton.AutoSize = true;
+            this.MetricradioButton.Location = new System.Drawing.Point(162, 134);
+            this.MetricradioButton.Name = "MetricradioButton";
+            this.MetricradioButton.Size = new System.Drawing.Size(106, 35);
+            this.MetricradioButton.TabIndex = 5;
+            this.MetricradioButton.TabStop = true;
+            this.MetricradioButton.Text = "Metric";
+            this.MetricradioButton.UseVisualStyleBackColor = true;
+            // 
+            // ImperialRadioButton
+            // 
+            this.ImperialRadioButton.AutoSize = true;
+            this.ImperialRadioButton.Location = new System.Drawing.Point(3, 134);
+            this.ImperialRadioButton.Name = "ImperialRadioButton";
+            this.ImperialRadioButton.Size = new System.Drawing.Size(128, 35);
+            this.ImperialRadioButton.TabIndex = 6;
+            this.ImperialRadioButton.TabStop = true;
+            this.ImperialRadioButton.Text = "Imperial";
+            this.ImperialRadioButton.UseVisualStyleBackColor = true;
             // 
             // ResulttextBox
             // 
             this.ResulttextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ResulttextBox.Location = new System.Drawing.Point(169, 177);
+            this.ResulttextBox.Location = new System.Drawing.Point(162, 177);
             this.ResulttextBox.MaxLength = 3;
             this.ResulttextBox.Name = "ResulttextBox";
-            this.ResulttextBox.Size = new System.Drawing.Size(110, 38);
+            this.ResulttextBox.Size = new System.Drawing.Size(125, 38);
             this.ResulttextBox.TabIndex = 1;
             // 
-            // CalculateButton
+            // BMIcalCalculateButton
             // 
-            this.CalculateButton.AutoSize = true;
-            this.CalculateButton.BackColor = System.Drawing.Color.Maroon;
-            this.tableLayoutPanel1.SetColumnSpan(this.CalculateButton, 2);
-            this.CalculateButton.Location = new System.Drawing.Point(3, 216);
-            this.CalculateButton.Name = "CalculateButton";
-            this.CalculateButton.Size = new System.Drawing.Size(265, 41);
-            this.CalculateButton.TabIndex = 3;
-            this.CalculateButton.Text = "Calculate BMI";
-            this.CalculateButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.CalculateButton.UseVisualStyleBackColor = false;
-            this.CalculateButton.Click += new System.EventHandler(this.CalculateButton_Click);
+            this.BMIcalCalculateButton.AutoSize = true;
+            this.BMIcalCalculateButton.BackColor = System.Drawing.Color.Maroon;
+            this.tableLayoutPanel1.SetColumnSpan(this.BMIcalCalculateButton, 2);
+            this.BMIcalCalculateButton.Location = new System.Drawing.Point(3, 222);
+            this.BMIcalCalculateButton.Name = "BMIcalCalculateButton";
+            this.BMIcalCalculateButton.Size = new System.Drawing.Size(275, 37);
+            this.BMIcalCalculateButton.TabIndex = 3;
+            this.BMIcalCalculateButton.Text = "Calculate BMI";
+            this.BMIcalCalculateButton.UseVisualStyleBackColor = false;
+            this.BMIcalCalculateButton.Click += new System.EventHandler(this.CalculateButton_Click);
             // 
             // Resetbutton
             // 
             this.Resetbutton.BackColor = System.Drawing.Color.Maroon;
             this.Resetbutton.Location = new System.Drawing.Point(3, 265);
             this.Resetbutton.Name = "Resetbutton";
-            this.Resetbutton.Size = new System.Drawing.Size(155, 44);
+            this.Resetbutton.Size = new System.Drawing.Size(128, 45);
             this.Resetbutton.TabIndex = 3;
             this.Resetbutton.Text = "Reset";
             this.Resetbutton.UseVisualStyleBackColor = false;
-            // 
-            // Exitbutton
-            // 
-            this.Exitbutton.BackColor = System.Drawing.Color.Maroon;
-            this.Exitbutton.Location = new System.Drawing.Point(169, 265);
-            this.Exitbutton.Name = "Exitbutton";
-            this.Exitbutton.Size = new System.Drawing.Size(116, 45);
-            this.Exitbutton.TabIndex = 3;
-            this.Exitbutton.Text = "exit";
-            this.Exitbutton.UseVisualStyleBackColor = false;
+            this.Resetbutton.Click += new System.EventHandler(this.Resetbutton_Click);
             // 
             // BMIResulttextBox
             // 
@@ -262,33 +277,24 @@
             this.BMIResulttextBox.Location = new System.Drawing.Point(15, 319);
             this.BMIResulttextBox.Multiline = true;
             this.BMIResulttextBox.Name = "BMIResulttextBox";
-            this.BMIResulttextBox.Size = new System.Drawing.Size(277, 119);
+            this.BMIResulttextBox.ReadOnly = true;
+            this.BMIResulttextBox.Size = new System.Drawing.Size(270, 110);
             this.BMIResulttextBox.TabIndex = 1;
             this.BMIResulttextBox.Text = "Underweight:  18.5 below\r\nNormal:            18.5 to 24.9\r\noverweight:      25 to" +
     " 29.9\r\nObese:               30 above\r\n";
+            this.BMIResulttextBox.TextChanged += new System.EventHandler(this.BMIResulttextBox_TextChanged);
             // 
-            // KgradioButton
+            // ExitButton
             // 
-            this.KgradioButton.AutoSize = true;
-            this.KgradioButton.Location = new System.Drawing.Point(3, 134);
-            this.KgradioButton.Name = "KgradioButton";
-            this.KgradioButton.Size = new System.Drawing.Size(65, 35);
-            this.KgradioButton.TabIndex = 4;
-            this.KgradioButton.TabStop = true;
-            this.KgradioButton.Text = "Kg";
-            this.KgradioButton.UseVisualStyleBackColor = true;
-            this.KgradioButton.CheckedChanged += new System.EventHandler(this.KgradioButton_CheckedChanged);
-            // 
-            // PoundradioButton
-            // 
-            this.PoundradioButton.AutoSize = true;
-            this.PoundradioButton.Location = new System.Drawing.Point(169, 134);
-            this.PoundradioButton.Name = "PoundradioButton";
-            this.PoundradioButton.Size = new System.Drawing.Size(110, 35);
-            this.PoundradioButton.TabIndex = 5;
-            this.PoundradioButton.TabStop = true;
-            this.PoundradioButton.Text = "Pound";
-            this.PoundradioButton.UseVisualStyleBackColor = true;
+            this.ExitButton.BackColor = System.Drawing.Color.Maroon;
+            this.ExitButton.Location = new System.Drawing.Point(162, 265);
+            this.ExitButton.Name = "ExitButton";
+            this.ExitButton.Size = new System.Drawing.Size(116, 45);
+            this.ExitButton.TabIndex = 7;
+            this.ExitButton.Text = "Exit";
+            this.ExitButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.ExitButton.UseVisualStyleBackColor = false;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
             // BMICalculatorForm
             // 
@@ -324,19 +330,20 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label Headinglabel;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label MYweightlabel;
+        private System.Windows.Forms.Label MYheightlabel;
+        private System.Windows.Forms.TextBox EnterWeighttextbox;
+        private System.Windows.Forms.TextBox Enterheighttextbox;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label ResultLabel;
+        private System.Windows.Forms.Label BMIResultLabel;
         private System.Windows.Forms.TextBox ResulttextBox;
-        private System.Windows.Forms.Button CalculateButton;
+        private System.Windows.Forms.Button BMIcalCalculateButton;
         private System.Windows.Forms.Button Resetbutton;
-        private System.Windows.Forms.Button Exitbutton;
         private System.Windows.Forms.TextBox BMIResulttextBox;
-        private System.Windows.Forms.RadioButton KgradioButton;
-        private System.Windows.Forms.RadioButton PoundradioButton;
+        private bool KgradioButton;
+        private System.Windows.Forms.RadioButton MetricradioButton;
+        private System.Windows.Forms.RadioButton ImperialRadioButton;
+        private System.Windows.Forms.Button ExitButton;
     }
 }
 
