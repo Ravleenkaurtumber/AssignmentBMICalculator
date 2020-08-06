@@ -311,7 +311,7 @@
             this.MaximizeBox = false;
             this.Name = "BMICalculatorForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "BMI Calculator";
             this.BMItableLayoutPanel.ResumeLayout(false);
             this.BMItableLayoutPanel.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
