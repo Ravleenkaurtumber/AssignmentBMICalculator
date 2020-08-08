@@ -46,8 +46,8 @@
             this.ResulttextBox = new System.Windows.Forms.TextBox();
             this.BMIcalCalculateButton = new System.Windows.Forms.Button();
             this.Resetbutton = new System.Windows.Forms.Button();
-            this.BMIResulttextBox = new System.Windows.Forms.TextBox();
             this.ExitButton = new System.Windows.Forms.Button();
+            this.BMIResulttextBox = new System.Windows.Forms.TextBox();
             this.BMItableLayoutPanel.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -270,6 +270,18 @@
             this.Resetbutton.UseVisualStyleBackColor = false;
             this.Resetbutton.Click += new System.EventHandler(this.Resetbutton_Click);
             // 
+            // ExitButton
+            // 
+            this.ExitButton.BackColor = System.Drawing.Color.Maroon;
+            this.ExitButton.Location = new System.Drawing.Point(162, 265);
+            this.ExitButton.Name = "ExitButton";
+            this.ExitButton.Size = new System.Drawing.Size(116, 45);
+            this.ExitButton.TabIndex = 7;
+            this.ExitButton.Text = "Exit";
+            this.ExitButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.ExitButton.UseVisualStyleBackColor = false;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
+            // 
             // BMIResulttextBox
             // 
             this.BMIResulttextBox.BackColor = System.Drawing.Color.DimGray;
@@ -283,18 +295,6 @@
             this.BMIResulttextBox.Text = "Underweight:  18.5 below\r\nNormal:            18.5 to 24.9\r\noverweight:      25 to" +
     " 29.9\r\nObese:               30 above\r\n";
             this.BMIResulttextBox.TextChanged += new System.EventHandler(this.BMIResulttextBox_TextChanged);
-            // 
-            // ExitButton
-            // 
-            this.ExitButton.BackColor = System.Drawing.Color.Maroon;
-            this.ExitButton.Location = new System.Drawing.Point(162, 265);
-            this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Size = new System.Drawing.Size(116, 45);
-            this.ExitButton.TabIndex = 7;
-            this.ExitButton.Text = "Exit";
-            this.ExitButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.ExitButton.UseVisualStyleBackColor = false;
-            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
             // BMICalculatorForm
             // 
